@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>melt. nail salon｜指先から、こなれる。</title>
+<meta name="description" content="melt.（メルト）は、ミルキーな抜け感が得意な韓国風ネイルサロン。ニュアンスからシンプルまで、あなたの手を"こなれ見え"に。初回オフ無料＋¥5,500。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="melt. nail salon｜指先から、こなれる。">
+<meta property="og:description" content="ミルキーな抜け感が得意な韓国風ネイルサロン。初回オフ無料＋¥5,500 受付中。">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='82'>🤍</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- アクセス解析（Vercel Web Analytics） -->
+<script defer src="/_vercel/insights/script.js"></script>
+
+<style>
+:root{
+  --paper:#FDFBF8;        /* ミルキーホワイト */
+  --beige:#EFE7DC;        /* ベージュ */
+  --tea:#C9B29B;          /* ミルクティー */
+  --rose:#C8A2A0;         /* くすみローズ（差し色） */
+  --ink:#5A4F45;          /* 文字 */
+  --ink-soft:#948A7E;
+  --line:rgba(201,178,155,.4);
+  --gothic:"Zen Kaku Gothic New",sans-serif;
+  --latin:"Cormorant Garamond",serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--gothic);font-weight:300;font-size:15px;line-height:2.1;letter-spacing:.07em;
+  overflow-x:hidden;-webkit-text-size-adjust:100%;
+}
+img{max-width:100%;height:auto;display:block;}
+.wrap{width:100%;max-width:660px;margin:0 auto;padding:0 26px;}
+section{padding:90px 0;}
+h1,h2,h3,p,li,dd{text-wrap:pretty;}
+
+.eyebrow{font-family:var(--latin);font-size:14px;letter-spacing:.32em;color:var(--tea);text-transform:uppercase;margin:0 0 14px;text-align:center;}
+h2{font-size:22px;line-height:1.8;font-weight:400;margin:0 0 44px;text-align:center;letter-spacing:.12em;}
+h3{font-size:16px;font-weight:500;margin:0 0 10px;letter-spacing:.08em;}
+p{margin:0 0 1.5em;}p:last-child{margin-bottom:0;}
+
+/* ヘッダー */
+header{position:sticky;top:0;z-index:50;background:rgba(253,251,248,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.header-in{max-width:660px;margin:0 auto;padding:15px 26px;display:flex;align-items:center;}
+.logo{font-family:var(--latin);font-size:22px;letter-spacing:.06em;color:var(--ink);}
+.header-btn{margin-left:auto;background:var(--ink);color:var(--paper);text-decoration:none;font-size:11px;letter-spacing:.12em;padding:11px 18px;border-radius:999px;white-space:nowrap;font-weight:400;}
+
+/* ヒーロー */
+.hero{position:relative;min-height:calc(100svh - 60px);display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 26px;overflow:hidden;
+  background:
+    radial-gradient(65% 50% at 78% 20%,rgba(200,162,160,.16),transparent 66%),
+    radial-gradient(70% 55% at 15% 88%,rgba(201,178,155,.2),transparent 68%),
+    linear-gradient(175deg,#FEFCFA 0%,#F6F0E9 58%,#EFE7DC 100%);
+}
+.hero-in{position:relative;max-width:520px;}
+.hero .latin{font-family:var(--latin);font-size:22px;letter-spacing:.3em;color:var(--tea);margin:0 0 22px;}
+.hero h1{font-size:27px;line-height:1.95;font-weight:400;margin:0 0 24px;letter-spacing:.14em;}
+.hero h1 b{font-weight:500;}
+.hero p{font-size:13.5px;color:var(--ink-soft);line-height:2.3;margin:0 0 38px;letter-spacing:.08em;}
+.hero .scroll{margin-top:42px;font-family:var(--latin);font-size:11px;letter-spacing:.3em;color:var(--tea);}
+.hero .scroll::after{content:"";display:block;width:1px;height:38px;margin:12px auto 0;background:linear-gradient(var(--tea),transparent);}
+
+/* ボタン */
+.cta{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;font-family:var(--gothic);font-weight:400;font-size:14px;letter-spacing:.1em;padding:18px 42px;border-radius:999px;transition:.3s;}
+.cta:hover{background:var(--rose);}
+.cta-wrap{text-align:center;}
+.cta small{display:block;font-size:11px;opacity:.85;margin-top:5px;letter-spacing:.06em;}
+
+/* 全幅バンド */
+.band{width:100%;height:250px;overflow:hidden;}
+.band img{width:100%;height:100%;object-fit:cover;}
+@media(min-width:768px){.band{height:420px;}}
+
+/* コンセプト */
+.concept{background:var(--beige);}
+.concept p{text-align:center;font-size:16px;line-height:2.5;letter-spacing:.1em;}
+
+/* 悩み */
+.worries{list-style:none;padding:0;margin:0 auto 40px;max-width:420px;}
+.worries li{padding:15px 0 15px 30px;position:relative;font-size:14.5px;border-bottom:1px solid var(--line);letter-spacing:.06em;}
+.worries li:last-child{border-bottom:none;}
+.worries li::before{content:"🤍";position:absolute;left:0;top:15px;font-size:13px;}
+
+/* メニュー */
+.menu-item{border:1px solid var(--line);border-radius:4px;padding:28px 26px;margin-bottom:16px;background:var(--paper);}
+.menu-item .mtop{display:flex;flex-direction:column;gap:4px;margin-bottom:10px;}
+.menu-item h3{margin:0;white-space:nowrap;}
+.menu-item .price{font-family:var(--latin);font-size:24px;color:var(--rose);letter-spacing:.02em;}
+.menu-item .price small{font-family:var(--gothic);font-size:11px;color:var(--ink-soft);}
+.menu-item .time{font-size:12px;color:var(--tea);letter-spacing:.08em;margin-bottom:8px;}
+.menu-item p{font-size:13px;line-height:2;color:var(--ink-soft);margin:0;}
+@media(min-width:768px){.menu-item .mtop{flex-direction:row;justify-content:space-between;align-items:baseline;}}
+
+/* こだわり */
+.feats{display:grid;gap:30px;}
+.feat{text-align:center;}
+.feat .no{font-family:var(--latin);font-size:15px;letter-spacing:.3em;color:var(--tea);margin-bottom:8px;}
+.feat p{font-size:13px;color:var(--ink-soft);line-height:2;margin:8px 0 0;}
+@media(min-width:768px){.feats{grid-template-columns:repeat(3,1fr);}}
+
+/* 声 */
+.voices{background:var(--tea);color:#fff;}
+.voices h2{color:#fff;}
+.voice{background:rgba(255,255,255,.14);border-radius:4px;padding:24px 22px;margin-bottom:16px;}
+.voice p{font-size:14px;line-height:2.05;margin:0 0 12px;font-weight:400;}
+.voice .who{font-family:var(--latin);font-size:12px;letter-spacing:.1em;color:rgba(255,255,255,.85);}
+.voices .disc{text-align:center;font-size:11px;color:rgba(255,255,255,.6);margin:20px 0 0;}
+
+/* 初回 */
+.offer{background:var(--beige);text-align:center;}
+.offer .box{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:44px 26px;max-width:440px;margin:0 auto;}
+.offer .ttl{font-size:16px;margin:0 0 4px;letter-spacing:.08em;}
+.offer .free{display:inline-block;background:var(--rose);color:#fff;font-size:12px;padding:4px 14px;border-radius:999px;margin:8px 0 14px;letter-spacing:.08em;}
+.offer .big{font-family:var(--latin);font-size:52px;color:var(--rose);line-height:1.05;margin:6px 0 2px;}
+.offer .big small{font-family:var(--gothic);font-size:15px;color:var(--ink);}
+.offer .was{font-size:13px;color:var(--ink-soft);text-decoration:line-through;margin:0 0 22px;}
+.offer .note{font-size:12px;color:var(--ink-soft);margin:20px 0 0;line-height:1.9;}
+
+/* 情報 */
+.info{max-width:420px;margin:0 auto;}
+.info dl{display:grid;grid-template-columns:auto 1fr;margin:0;}
+.info dt{font-family:var(--latin);font-size:14px;color:var(--tea);padding:13px 0;border-bottom:1px solid var(--line);white-space:nowrap;padding-right:24px;letter-spacing:.05em;}
+.info dd{font-size:13.5px;margin:0;padding:13px 0;border-bottom:1px solid var(--line);color:var(--ink-soft);}
+
+/* pitch */
+.pitch{background:linear-gradient(175deg,#EFE7DC,#F6F0E9);}
+.pitch .inner{max-width:520px;margin:0 auto;text-align:center;}
+.pitch .badge{display:inline-block;font-family:var(--latin);font-size:11px;letter-spacing:.24em;color:var(--tea);border:1px solid var(--tea);border-radius:999px;padding:6px 16px;margin-bottom:22px;}
+.pitch p{font-size:14px;line-height:2.1;color:var(--ink-soft);margin-bottom:14px;}
+.pitch .sign{font-size:14px;color:var(--ink);margin:26px 0 30px;letter-spacing:.05em;font-weight:400;}
+
+footer{background:var(--ink);color:rgba(253,251,248,.75);text-align:center;padding:48px 26px;}
+footer .fl{font-family:var(--latin);font-size:22px;letter-spacing:.06em;color:var(--paper);margin-bottom:4px;}
+footer .fs{font-size:10px;letter-spacing:.24em;color:var(--tea);margin-bottom:22px;}
+footer .links a{color:var(--paper);text-decoration:none;margin:0 12px;font-size:12px;}
+footer .copy{font-size:10.5px;opacity:.5;margin-top:22px;line-height:1.8;}
+
+@media(min-width:768px){
+  body{font-size:16px;}
+  section{padding:120px 0;}
+  h2{font-size:27px;}
+  .hero h1{font-size:35px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <div class="logo">melt.</div>
+    <a class="header-btn" href="#offer">ご予約</a>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="hero-in">
+    <p class="latin">m e l t .</p>
+    <h1>指先から、<br><b>こなれる。</b></h1>
+    <p>やりすぎない、でも、ちゃんと可愛い。<br>ミルキーな抜け感で、<br>あなたの手を"こなれ見え"に。</p>
+    <div class="cta-wrap">
+      <a class="cta" href="#offer">初回のご予約はこちら<small>初回オフ無料 ＋ ¥5,500</small></a>
+    </div>
+    <p class="scroll">SCROLL</p>
+  </div>
+</div>
+
+<!-- コンセプト -->
+<section class="concept">
+  <div class="wrap">
+    <p class="eyebrow">Concept</p>
+    <p>派手じゃない。<br>でも、なんかいい。<br><br>melt. がつくるのは、<br>毎日見るたびに気分が上がる、<br>"ちょうどいい可愛い"です。</p>
+  </div>
+</section>
+
+<!-- 悩み -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Worries</p>
+    <h2>こんなこと、<br>ありませんか</h2>
+    <ul class="worries">
+      <li>いつも同じデザインになってしまう</li>
+      <li>派手すぎると浮くし、地味すぎても物足りない</li>
+      <li>すぐ欠ける・すぐ浮いてしまう</li>
+      <li>自分に似合う色が、正直わからない</li>
+    </ul>
+    <p style="text-align:center;font-size:14px;color:var(--ink-soft);">"なんとなく可愛い"を、<br>一緒に見つけましょう。</p>
+  </div>
+</section>
+
+<!-- メニュー -->
+<section class="concept">
+  <div class="wrap">
+    <p class="eyebrow">Menu</p>
+    <h2>Menu</h2>
+    <div class="menu-item">
+      <div class="mtop"><h3>シンプルワンカラー</h3><span class="price">¥5,500</span></div>
+      <p class="time">約90分</p>
+      <p>ミルクベージュやくすみカラーなど、肌をきれいに見せる"神カラー"をご提案。オフィスにも◎</p>
+    </div>
+    <div class="menu-item">
+      <div class="mtop"><h3>ニュアンスデザイン</h3><span class="price">¥7,700</span></div>
+      <p class="time">約120分</p>
+      <p>マグネット・ミラー・ちゅるんとした質感まで。今っぽい"抜け感"を、指先に。</p>
+    </div>
+    <div class="menu-item">
+      <div class="mtop"><h3>定額アートコース</h3><span class="price">¥8,800</span></div>
+      <p class="time">約130分</p>
+      <p>デザイン迷子さんへ。お任せでも"外さない"、melt. らしいデザインをおまかせで。</p>
+    </div>
+  </div>
+</section>
+
+<!-- こだわり -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Our Care</p>
+    <h2>melt. の、<br>3つのこだわり</h2>
+    <div class="feats">
+      <div class="feat"><p class="no">01</p><h3>似合わせカラー診断</h3><p>肌のトーンから、あなたに似合う"神カラー"をご提案します。</p></div>
+      <div class="feat"><p class="no">02</p><h3>もちのいい施術</h3><p>丁寧な下準備で、欠けにくく浮きにくい。きれいが長つづき。</p></div>
+      <div class="feat"><p class="no">03</p><h3>完全マンツーマン</h3><p>ゆったり1対1。デザインの相談も、じっくりできます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 声 -->
+<section class="voices">
+  <div class="wrap">
+    <p class="eyebrow">Voice</p>
+    <h2>お客様の声</h2>
+    <div class="voice"><p>「自分では選ばない色を提案してもらって、それがすごく可愛くて。毎日手元を見るのが楽しいです。」</p><p class="who">— 20代 / 会社員</p></div>
+    <div class="voice"><p>「もちが全然違う…！3週間経っても、ぜんぜんきれいでした。」</p><p class="who">— 30代 / 主婦</p></div>
+    <div class="voice"><p>「"おまかせ"にしたのに、ドンピシャで好み。センスを信頼してます。」</p><p class="who">— 20代 / 学生</p></div>
+    <p class="disc">※ このLPはサンプルです。お客様の声はイメージです。</p>
+  </div>
+</section>
+
+<!-- 初回 -->
+<section class="offer" id="offer">
+  <div class="wrap">
+    <p class="eyebrow">First Menu</p>
+    <h2>初回のご案内</h2>
+    <div class="box">
+      <p class="ttl">シンプルワンカラー（約90分）</p>
+      <p class="free">初回オフ無料</p>
+      <p class="big">¥5,500<small>（税込）</small></p>
+      <p class="was">通常 ¥7,700</p>
+      <div class="cta-wrap">
+        <a class="cta" href="#offer" onclick="return sampleAlert();">この内容で予約する<small>ご希望日をお選びください</small></a>
+      </div>
+      <p class="note">※ こちらはサンプルLPです。実際には予約フォームや予約サイトにつながります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 情報 -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Salon Info</p>
+    <h2>Salon Info</h2>
+    <div class="info">
+      <dl>
+        <dt>店名</dt><dd>melt. nail salon</dd>
+        <dt>住所</dt><dd>東京都渋谷区（サンプル）</dd>
+        <dt>最寄</dt><dd>◯◯駅から徒歩3分（サンプル）</dd>
+        <dt>営業</dt><dd>10:00 – 20:00</dd>
+        <dt>定休</dt><dd>不定休</dd>
+        <dt>ご予約</dt><dd>完全予約制・マンツーマン</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- pitch -->
+<section class="pitch">
+  <div class="wrap">
+    <div class="inner">
+      <span class="badge">This is a sample</span>
+      <h2>このページ、<br>気になりませんか？</h2>
+      <p>ここまでご覧いただいたこのLPは、<br>実在しない架空のサロンの「サンプル」です。</p>
+      <p>「うちのサロンにも、こんなページがほしい」<br>そう思っていただけたなら——<br>あなたのサロンの世界観に合わせて、お作りします。</p>
+      <p class="sign">エステ歴18年 × LP制作　サキ<br>1人サロンの『うら側整え屋』</p>
+      <div class="cta-wrap">
+        <a class="cta" href="https://www.threads.com/@saki.created_easth" target="_blank" rel="noopener">制作について相談する<small>ThreadsのDMへ、お気軽に</small></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fl">melt.</div>
+  <div class="fs">NAIL SALON — SAMPLE</div>
+  <div class="links">
+    <a href="https://www.threads.com/@saki.created_easth" target="_blank" rel="noopener">Threads</a>
+    <a href="#offer">ご予約</a>
+  </div>
+  <p class="copy">このページは、サキが制作した架空サロンのサンプルLPです。<br>&copy; 2026 Sample by サキ｜1人サロンの『うら側整え屋』</p>
+</footer>
+
+<script>
+function sampleAlert(){
+  alert("これはサンプルLPです。実際のサイトでは、ここで予約フォームや予約サイトにつながります。");
+  return false;
+}
+</script>
+</body>
+</html>
