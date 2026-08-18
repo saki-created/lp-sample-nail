@@ -56,13 +56,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(253,251,248,.86);backdro
 .header-btn{margin-left:auto;background:var(--ink);color:var(--paper);text-decoration:none;font-size:11px;letter-spacing:.12em;padding:11px 18px;border-radius:999px;white-space:nowrap;font-weight:400;}
 
 /* ヒーロー */
-.hero{position:relative;min-height:calc(100svh - 60px);display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 26px;overflow:hidden;
-  background:
-    radial-gradient(65% 50% at 78% 20%,rgba(200,162,160,.16),transparent 66%),
-    radial-gradient(70% 55% at 15% 88%,rgba(201,178,155,.2),transparent 68%),
-    linear-gradient(175deg,#FEFCFA 0%,#F6F0E9 58%,#EFE7DC 100%);
-}
-.hero-in{position:relative;max-width:520px;}
+.hero{position:relative;min-height:calc(100svh - 60px);display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 26px;overflow:hidden;background:#EFE7DC;}
+.hero .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(175deg,rgba(254,252,250,.66),rgba(246,240,233,.72) 55%,rgba(239,231,220,.82));}
+.hero-in{position:relative;z-index:2;max-width:520px;}
 .hero .latin{font-family:var(--latin);font-size:22px;letter-spacing:.3em;color:var(--tea);margin:0 0 22px;}
 .hero h1{font-size:27px;line-height:1.95;font-weight:400;margin:0 0 24px;letter-spacing:.14em;}
 .hero h1 b{font-weight:500;}
@@ -164,6 +161,7 @@ footer .copy{font-size:10.5px;opacity:.5;margin-top:22px;line-height:1.8;}
 
 <!-- ヒーロー -->
 <div class="hero">
+  <img class="hero-bg" src="images/hero.jpg" alt="melt. の店内">
   <div class="hero-in">
     <p class="latin">m e l t .</p>
     <h1>指先から、<br><b>こなれる。</b></h1>
@@ -221,6 +219,8 @@ footer .copy{font-size:10.5px;opacity:.5;margin-top:22px;line-height:1.8;}
   </div>
 </section>
 
+<div class="band"><img src="images/chips.jpg" alt="melt. のデザインサンプル" loading="lazy"></div>
+
 <!-- こだわり -->
 <section>
   <div class="wrap">
@@ -233,6 +233,8 @@ footer .copy{font-size:10.5px;opacity:.5;margin-top:22px;line-height:1.8;}
     </div>
   </div>
 </section>
+
+<div class="band"><img src="images/hands.jpg" alt="melt. の施術風景" loading="lazy"></div>
 
 <!-- 声 -->
 <section class="voices">
