@@ -15,7 +15,7 @@
 - 相談導線：末尾 .pitch＋フッター → Threads(@saki.created_easth)
 - 声は「※イメージ」。サンプル表記あり。noindexなし（検索に出す）。
 - アクセス解析：script.js設置済み。※VercelでEnableはサキさん操作待ち。
-- 写真：なし（CSSグラデのみ。ネイルの手元写真を入れるなら images/ へ）
+- 写真：3枚設置（hero.jpg＝店内ロゴ入り／chips.jpg＝デザイン見本／hands.jpg＝施術風景）
 
 ## 作品集サンプル一覧
 - ① https://lp-sample-salon.vercel.app  エステ Lumière（白×ゴールド高級／写真あり）
@@ -25,5 +25,5 @@
 
 ## 次のタスク
 - [ ] VercelでWeb Analyticsを Enable → 再デプロイ
-- [ ] 写真（ネイル手元/店内）を入れるか検討
+- [x] 写真3枚を設置
 - [ ] まつげサロンのサンプルLPを制作（次）
